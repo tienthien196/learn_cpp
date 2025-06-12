@@ -4,7 +4,7 @@
 
 void get_input(int &a, int &b){
     printf("nahp vao 2 so a b ");
-    scanf("%d %d", &a, &b);
+    scanf("%d %d", &a, &b); // nhap dung dia chi
 
 }
 void nhap_matran(int matran[][MAX], int m, int n){

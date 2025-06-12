@@ -21,12 +21,23 @@ void xuat_arr(int a[MAX], int s){
     }
 }
 
+void test_pointer_arr(){
+    int arr[] = {1, 3, 4, 5};
+    int *p = &arr[0];
+    printf("%d", *p);
+    printf("\n %p", p+3);
+    
+    
+    
+}
+
 int main(){
-    int size = 0; get_size(size);
-    //
-    int arr[MAX];
-    nhap_arr(arr, size);
-    xuat_arr(arr, size);
-    //
+    test_pointer_arr();
+    // int size = 0; get_size(size);
+    // //
+    // int arr[MAX];
+    // nhap_arr(arr, size);
+    // xuat_arr(arr, size);
+    // //
     return 0;
 }
