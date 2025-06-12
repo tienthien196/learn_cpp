@@ -4,10 +4,11 @@
 
 void get_input(int &a, int &b){
     printf("nahp vao 2 so a b ");
-    scanf("%d %d", &a, &a);
+    scanf("%d %d", &a, &b);
 
 }
-void nhap_matran(int matran[MAX][MAX], int m, int n){
+void nhap_matran(int matran[][MAX], int m, int n){
+    printf("%d %d", m, n);
 
     for(int i =0; i<m; i++){
         for(int j =0; j<n; j++){
@@ -17,14 +18,24 @@ void nhap_matran(int matran[MAX][MAX], int m, int n){
         }
     }
 }
+void xuat_matran(int matran[][MAX], int m, int n){
+    for(int i =0; i<m; i++){
+        for(int j =0; j<n; j++){
+            printf("\nvalue of a[%d][%d] is: %d",i, j, matran[i][j]);
 
+            
+        }
+    }
+}
 
 int main(){
-    int a,b;
+    int a= 0;
+    int b = 0;
     get_input(a,b);
     //
     int m[MAX][MAX];
     nhap_matran(m, a,b);
+    xuat_matran(m, a, b);
 
 
     return 0;
